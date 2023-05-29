@@ -34,23 +34,23 @@
   padding: 2rem;
 }
 
-.section {
+.content {
   width: 100%;
   padding: 2rem;
   border-radius: 0.5rem;
   color: #ffffff;
 }
 
-.section_inputs, .section_temperature {
+.content_input, .content_temperature {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--section-overlay);
 }
 
-.section_inputs>input {
+.content_input>input {
   border: 0.5px solid gray;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   background-color: transparent;
   color: #ffffff;
   padding: 0.7rem;
@@ -58,20 +58,20 @@
   font-weight: 200;
 }
 
-.section_inputs>input:focus {
+.content_input>input:focus {
   outline: none;
 }
 
-.section_inputs>button {
-  padding: 18px 50px;
+.content_input>button {
+  padding: 16px 50px;
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   font-size: 20px;
   font-weight: 500;
   background-color: #ffffff;
 }
 
-.section_inputs>button:hover {
+.content_input>button:hover {
   cursor: pointer;
   background-color: gray;
 }
