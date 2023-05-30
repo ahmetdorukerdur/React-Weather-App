@@ -86,6 +86,7 @@
 .icon>h3 {
   font-size: 20px;
   font-weight: 300;
+  text-transform: capitalize;
 }
 
 .temperature>h3 {
