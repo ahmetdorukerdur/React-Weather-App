@@ -22,11 +22,11 @@ interface WeatherResponse {
 function App() {
   const [weather, setWeather] = useState<WeatherResponse>();
   const [units, setUnits] = React.useState('metric');
-  const [city, setCity] = React.useState<WeatherResponse>();
+  const [city, setCity] = useState();
   const [background, setBackground] = React.useState(sunnyDay);
 
   useEffect(() => {
-    const fetchWeatherData =async () => {
+    const fetchWeatherData = async () => {
       const data = await getWeatherData(city, units);
       setWeather(data);
 

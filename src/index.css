@@ -56,6 +56,7 @@
   padding: 0.7rem;
   font-size: 24px;
   font-weight: 200;
+  width: 40%;
 }
 
 .content_input>input:focus {
@@ -63,12 +64,14 @@
 }
 
 .content_input>button {
-  padding: 16px 50px;
+  padding: 16px 0px;
   border: none;
   border-radius: 0.5rem;
   font-size: 20px;
   font-weight: 500;
   background-color: #ffffff;
+  width: 30%;
+  text-align: center;
 }
 
 .content_input>button:hover {
