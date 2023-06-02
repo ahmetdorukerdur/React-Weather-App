@@ -27,7 +27,7 @@ function App() {
 
   useEffect(() => {
     const fetchWeatherData = async () => {
-      const data = await getWeatherData(city, units);
+      const data = await getWeatherData(city ? city: 'istanbul', units);
       setWeather(data);
 
       const changeBackground = units === 'metric' ? 20 : 60;
@@ -52,6 +52,8 @@ function App() {
       e.currentTarget.blur();
     }
   };
+  
+  navigator.geolocation.getCurrentPosition((position) => console.log(position));
 
   return (
     <div className='App' style={{ backgroundImage: `url(${background})` }}>
